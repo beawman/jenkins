@@ -8,9 +8,8 @@ reference: https://www.jenkins.io/doc/book/installing/docker/
 
 Mac OS
 ```
-docker run \
+docker run --rm\
   --name jenkins \
-  --restart=on-failure \
   --detach \
   --network jenkins \
   --env DOCKER_HOST=tcp://docker:2376 \
